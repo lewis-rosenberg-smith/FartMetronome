@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 
 function BpmForm(props) {
 
-  const [bpm, setBpm] = useState(69420)
-
+  const [bpm, setBpm] = useState(0)
+  
+  //Sets bpm, and sends alert displaying New BPM
   const handleSubmit = (evt) => {
     evt.preventDefault();
     alert(`Display BPM ${bpm}`)
   }
+
+
 
   return (
     <form onSubmit = {handleSubmit}>
