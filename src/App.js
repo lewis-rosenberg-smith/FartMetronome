@@ -1,15 +1,16 @@
-import './App.css';
+import './App.scss';
 
-import BpmForm from './components/bpm.form.component.jsx'
-import FartButton from './components/fart-button-component';
+import BpmForm from './components/bpm-form/bpm.form.component.jsx'
 
 
 function App() {
   return (
-    <>
-    <BpmForm/>
-    <FartButton/>
-    </>
+    <div class='container'>
+      <div class='box'>
+        <BpmForm/>
+      </div>
+    </div>
+    
   );
 }
 
